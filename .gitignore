@@ -1,2 +1,5 @@
-# Ignorer fichiers configurations
+# Ignorer dossier VsCode
 .vscode/
+
+# Ignorer dossier library
+.library/
