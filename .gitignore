@@ -2,4 +2,4 @@
 .vscode/
 
 # Ignorer dossier library
-.library/
+library/
