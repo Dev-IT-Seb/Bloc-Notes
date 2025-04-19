@@ -1,0 +1,176 @@
+/* RESET PAR DEFAUT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------ */
+/* VUE PAGE ACCUEIL */ 
+    /* SETTINGS */
+/*  COLOR NAV 4682b4 */
+/* ----- HEADER ------- */
+body{
+    background-color: #000000e3;
+}
+
+header {
+    background-color: #4682b4;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15rem;
+    align-items: center;
+    height: 5rem;
+}
+
+.title{
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.title a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.connection{
+    display: flex;
+    text-decoration: none;
+    font-size: 21px;
+    gap: 2rem;
+}
+
+.connection a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+
+@media (max-width: 720px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+/* ----- MAIN ------- */
+/* */
+/* ----- TITLE ------- */
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.container-title h1::first-letter{
+    text-transform: capitalize;
+}
+
+.container-title p::first-letter{
+    text-transform: capitalize;
+}
+
+.container-title .row{
+    background-color: #4682b4;
+    border: solid 2px #000000;
+    padding: 3rem 10rem;
+    border-radius: 1rem;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 30px;
+}
+.container-title .row p{
+    color: #ffffff;
+}
+
+/* BUTTON FORMULAIRE */
+.row-cta{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.cta-accueil{
+    border: solid 1px #ffffff;
+    border-radius: 7%;
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+}
+
+.cta-accueil:hover{
+    background-color: red;
+}
+
+.cta-accueil p{
+    font-size: 15px;
+}
+/* ----- FORMULAIRE ------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ */
