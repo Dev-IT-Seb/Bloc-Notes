@@ -1,2 +1,2 @@
 # Ignorer fichiers configurations
-vscode
+.vscode/
