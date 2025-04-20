@@ -32,7 +32,7 @@
                     <div class="row-cta">
                         <!-- BUTTON ACCUEIL -->
                         <div class="cta-accueil">
-                            <p>appuie</p>
+                            <p>Bienvenue</p>
                         </div>
                     </div>
                 </div>
@@ -45,8 +45,10 @@
                     $desription = "Description";
                     $labelNote = "Enregistre ta note";
                     $buttonNote = "Enregistrer";
-                    // FORMULAIRE
+
+                    // FORMULAIRE FRAGMENT
                     include "templates/fragments/formulaire.php";
+
                 ?>
             </div>
         </main>

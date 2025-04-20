@@ -1,27 +1,10 @@
 <?php
     //CONTROLEUR ACTIONS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Import file init PHP
     
-//RENVOI VERS LA VUE AFFICHAGE ACCUEIL
-//include "templates/pages/affichage_accueil.php";
+//IMPORT INIT.PHP
+include "library/init.php";
+
+
+AjouterNote();
