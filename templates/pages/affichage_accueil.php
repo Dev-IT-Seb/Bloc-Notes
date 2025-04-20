@@ -25,8 +25,10 @@
             <div class="container-title">
                 <div class="row">
                     <h1>bienvenue sur le site de création de notes !</h1>
-                    <p>vous pouvez créer de nouvelle note, les modifier et les supprimer.</p>
-                    <p>rechercher vos notes avec la barre de recherche.</p>
+                    <div class="infos-title">
+                        <p>vous pouvez créer de nouvelle note, les modifier et les supprimer.</p>
+                        <p>rechercher vos notes avec la barre de recherche.</p>
+                    </div>
                     <div class="row-cta">
                         <!-- BUTTON ACCUEIL -->
                         <div class="cta-accueil">
@@ -35,20 +37,18 @@
                     </div>
                 </div>
             </div>
-            <!-- SECTION PHP -->
-            <?php
-            //
-            //FORMULAIRE
-            
-
-
-
-
-
-
-
-
-            ?>
+            <div class="form-container">
+                <?php
+                    // VARIABLE FORMULAIRE
+                    $actionform = "controleur_actions.php";
+                    $titre = "Titre de ta note";
+                    $desription = "Description";
+                    $labelNote = "Enregistre ta note";
+                    $buttonNote = "Enregistrer";
+                    // FORMULAIRE
+                    include "templates/fragments/formulaire.php";
+                ?>
+            </div>
         </main>
         <footer>
             <script src="../../js/script.js"></script>

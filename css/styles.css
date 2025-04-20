@@ -6,8 +6,6 @@
 }
 /* ------------------ */
 /* VUE PAGE ACCUEIL */ 
-    /* SETTINGS */
-/*  COLOR NAV 4682b4 */
 /* ----- HEADER ------- */
 body{
     background-color: #000000e3;
@@ -51,6 +49,7 @@ header nav {
     text-transform:capitalize;
 }
 
+/* MEDIA QUERIES */ 
 @media (max-width: 720px) {
 
     header{
@@ -84,7 +83,6 @@ header nav {
     }
 }
 /* ----- MAIN ------- */
-/* */
 /* ----- TITLE ------- */
 .container-title{
     display: flex;
@@ -93,11 +91,12 @@ header nav {
     padding: 1.5rem;
 }
 
-.container-title h1::first-letter{
-    text-transform: capitalize;
+h1{
+    color: #ffffff;
+    font-size: 30px;
 }
 
-.container-title p::first-letter{
+.container-title h1::first-letter{
     text-transform: capitalize;
 }
 
@@ -108,17 +107,21 @@ header nav {
     border-radius: 1rem;
 }
 
-h1{
-    color: #ffffff;
-    font-size: 30px;
+.container-title p::first-letter{
+    text-transform: capitalize;
 }
+
 .container-title .row p{
     color: #ffffff;
 }
 
+.infos-title{
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
 /* BUTTON FORMULAIRE */
 .row-cta{
-    display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,44 +136,84 @@ h1{
 }
 
 .cta-accueil:hover{
-    background-color: red;
+    background-color: #ff0000;
 }
 
 .cta-accueil p{
     font-size: 15px;
 }
 /* ----- FORMULAIRE ------- */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-notes {
+    background-color: #4682b4;
+    width: 50rem;
+    border: solid 1px #000000;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.title-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}
 
+#titre{
+    width: 30rem;
+    margin-top: 0.5rem;
+}
 
+.title-label-note{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.description-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+#description{
+    background-color: #ffffff;
+    width: 30rem;
+    height: 20rem;
+    margin-top: 0.5rem;
+}
 
+.title-label-description{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.cta-form-notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 
+.labelNote{
+    padding-bottom: 0.5rem;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#send{
+    padding: 0.3rem 0.5rem;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 7%;
+}
 /* ------------------ */
