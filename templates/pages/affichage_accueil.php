@@ -26,7 +26,7 @@
                 <div class="row">
                     <h1>bienvenue sur le site de création de notes !</h1>
                     <div class="infos-title">
-                        <p>vous pouvez créer de nouvelle note, les modifier et les supprimer.</p>
+                        <p>vous pouvez créer de nouvelle note, les modifier ou les supprimer.</p>
                         <p>rechercher vos notes avec la barre de recherche.</p>
                     </div>
                     <div class="row-cta">
@@ -42,13 +42,11 @@
                     // VARIABLE FORMULAIRE
                     $actionform = "controleur_actions.php";
                     $titre = "Titre de ta note";
-                    $desription = "Description";
+                    $description = "Description";
                     $labelNote = "Enregistre ta note";
                     $buttonNote = "Enregistrer";
-
                     // FORMULAIRE FRAGMENT
                     include "templates/fragments/formulaire.php";
-
                 ?>
             </div>
         </main>
