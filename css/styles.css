@@ -149,16 +149,15 @@ h1{
     border: solid 1px #ffffff;
     border-radius: 7%;
     background-color: #219230;
+    color: #ffffff;
     padding: 0.5rem 1rem;
+    font-size: 15px;
 }
 
 .cta-search:hover{
     background-color: #ff0404;
 }
 
-.cta-search p{
-    font-size: 15px;
-}
 /* ----- FORMULAIRE ------- */
 .form-container {
     display: flex;

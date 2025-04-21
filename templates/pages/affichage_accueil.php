@@ -34,10 +34,10 @@
                         <div class="cta-accueil">
                             <p>Bienvenue</p>
                         </div>
-                        <!-- BUTTON SEARCH -->
-                        <div class="cta-search">
-                            <p>Voir notes</p>
-                        </div>
+                        <!-- BUTTON VIEW NOTES -->
+                        <form method="POST">
+                            <button type="submit" name="view-notes" class="cta-search">Voir notes</button>
+                        </form>
                     </div>
                 </div>
             </div>
