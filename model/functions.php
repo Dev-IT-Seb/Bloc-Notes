@@ -5,15 +5,15 @@
     //AJOUTER
     //MODIFIER
     //SUPPRIMER
-    //RECHERCHER
+    //VIEW
     //----------------//
     // UNE REQUETE SE REALISE EN 5 TEMPS (ligne 19)
     //----------------//
 
     //IMPORT FILE "CONTROLEUR_ACCUEIL.PHP"
-    include "controleur_accueil.php";
+    //require_once "controleur_accueil.php";
 
-    //FUNCTION AJOUTER NOTES
+    //-- FUNCTION AJOUTER NOTES
     function AjouterNote($TitreForm, $DescriptionForm){
 
         // 1. Creation d'une variable globale qui pourra être accessible
@@ -39,4 +39,18 @@
             // exit (alias = die) => Permet de stopper la requête et le script s'arrête.
             exit;
         };
+    };
+
+
+    //-- FUNCTION VIEW NOTES (AFFICHAGE DES NOTES)
+    function AffichageNotes(){
+
+
+
+        
+
+
+
+
+
     };

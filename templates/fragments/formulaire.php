@@ -11,7 +11,7 @@
     <div class="description-form">
         <label for="description" class="title-label-description"><?= $description ?></label>
         <!-- RECUPERATION NAME POUR SQL -->
-        <input type="text" id="description" name="descriptionInput">
+        <textarea id="description" name="descriptionInput" placeholder="Écrit une description à l'intérieur..."></textarea>
     </div>
     <div class="cta-form-notes">
         <label for="send" class="labelNote"><?= $labelNote ?></label>

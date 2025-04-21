@@ -1,6 +1,5 @@
 <?php
     // VUE ACCUEIL BLOC NOTES
-    // TITRE + TEXTE
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,7 +34,7 @@
                             <p>Bienvenue</p>
                         </div>
                         <!-- BUTTON VIEW NOTES -->
-                        <form method="POST">
+                        <form action="controleur_view.php" method="POST">
                             <button type="submit" name="view-notes" class="cta-search">Voir notes</button>
                         </form>
                     </div>

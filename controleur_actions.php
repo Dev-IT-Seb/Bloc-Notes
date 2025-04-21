@@ -4,10 +4,10 @@
     // RECUPERATION VALEURS VIA $_POST + LANCEMENT DES FUNCTIONS
     
 // IMPORT "INIT.PHP"
-include "library/init.php";
+require_once "library/init.php";
 
 // IMPORT "FUNCTIONS.PHP"
-include "model/functions.php";
+require_once "model/functions.php";
 
 // RECUPERATION VALEURS INPUT DU FORMULAIRE (-- COMME DES SELECTEURS EN JS --)
 $TitreForm = $_POST["titreInput"];
@@ -21,35 +21,5 @@ $DescriptionForm = $_POST["descriptionInput"];
 // (POUR REMPLISSAGE DES VALEURS "POUR LA REQUETE") => Voir Page "functions.php" (ligne 17, 28, 29)
 AjouterNote($TitreForm, $DescriptionForm);
 
-
-// LANCEMENT FUNCTION AFFICHER
-
-
-
-
-
-
-
-
-
-
-
-
-
-// LANCEMENT FUNCTION MODIFIER
-
-
-
-
-
-
-
-
-
-
-// LANCEMENT FUNCTION SUPPRIMER
-
-
-
-
-
+// RENVOI VERS LA VUE "AFFICHAGE ACCUEIL.PHP" APRES TRAITEMENT
+include_once "templates/pages/affichage_accueil.php";
