@@ -1,6 +1,8 @@
 <?php
     
     //CONTROLEUR DE TEST
+    include "library/init.php";
+    include "model/functions.php";
 
 ?>
 
@@ -13,14 +15,12 @@
     </head>
     <body>
         <h1>PAGE TEST</h1>
+
     </body>
 </html>
 
 <?php
-    include "library/init.php";
-
-    AjouterNote();
+    AffichageNotes();
 
     
-
 ?>

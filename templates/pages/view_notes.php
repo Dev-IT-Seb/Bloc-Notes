@@ -1,5 +1,9 @@
 <?php
     // VUE NOTES
+    
+    //AFFICHAGE ERREUR
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
 ?>
 
 <!DOCTYPE html>
@@ -38,17 +42,8 @@
                     </thead>
                     <tbody>
                         <!-- TRAITEMENT PHP -->
-                        <?php
-
-
-
-
-
-
-
-
-
-
+                        <?php 
+                         AffichageNotes();
                         ?>
                     </tbody>
                 </table>

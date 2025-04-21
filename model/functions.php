@@ -7,7 +7,7 @@
     //SUPPRIMER
     //VIEW
     //----------------//
-    // UNE REQUETE SE REALISE EN 5 TEMPS (ligne 19)
+    // UNE REQUETE SE REALISE EN 5 TEMPS POUR AJOUT (ligne 19)
     //----------------//
 
     //IMPORT FILE "CONTROLEUR_ACCUEIL.PHP"
@@ -45,12 +45,36 @@
     //-- FUNCTION VIEW NOTES (AFFICHAGE DES NOTES)
     function AffichageNotes(){
 
-
-
+        // 1. Creation d'une variable globale qui pourra être accessible
+        global $bdd;
         
+        // 2. REQUETE SQL 
+        //SELECT `id`, `titre`, `texte` FROM `bloc-notes`
+        $sqlRequete = "SELECT `titre`, `texte` FROM `bloc-notes`";
+        
+        // 3. Preparation de la requête
+        $PrepareRequete = $bdd->prepare($sqlRequete);
 
+        // 4. ENVOI REQUETE + VERIFICATION SI CELA FONCTIONNE CORRECTEMENT
+        if (!$PrepareRequete -> execute()){
+            echo "Requete SQL HS !";
+            exit;
+        };
 
+        //RECUPERATION DU RESULTAT VIA FETCH ALL
+        //FETCH_ASSOC = Récupère une ligne de resultat sous forme d'un tableau associatif
+        $resultatsView = $PrepareRequete ->fetchAll(PDO::FETCH_ASSOC);
 
-
-
+        //BOUCLE DES DONNEES RECUPEREES VIA LA REQUETE SQL FETCH ALL
+        foreach ($resultatsView as $datas){
+            echo "<tr>";
+            echo "<td>" . $datas['titre'] . "</td>";
+            echo "<td>" . $datas['texte'] . "</td>";
+            echo "
+            <td>
+            <a href='#' title='Cliquer pour modifier' class='cta-actions'>" . "Modifier" ."</a>
+            <a href='#' title='Cliquer pour supprimer' class='cta-actions'>" . "Supprimer" ."</a>
+            </td> ";
+            echo "</tr>";
+        };
     };
