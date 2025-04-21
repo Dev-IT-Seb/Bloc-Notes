@@ -5,7 +5,6 @@
     ini_set('display_errors',1);
     error_reporting(E_ALL);
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <?php 
@@ -43,7 +42,12 @@
                     <tbody>
                         <!-- TRAITEMENT PHP -->
                         <?php 
-                         AffichageNotes();
+                            // LANCEMENT FUNCTION VIEW TABLE
+                            AffichageNotes();
+                            //SUPPRIMER
+                            SupprimerNotes();
+                            // MODIFIER (VOIR POUR MODAL)
+                            ModifierNotes();
                         ?>
                     </tbody>
                 </table>

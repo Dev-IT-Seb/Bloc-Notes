@@ -7,7 +7,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-    <?php 
+<?php 
     // HEAD FRAGMENT
     include "templates/fragments/head.php";
     ?>

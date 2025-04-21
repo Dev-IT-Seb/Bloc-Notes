@@ -1,17 +1,15 @@
 <?php
     
-    // FUNCTIONS 
+    //-- PAGE FUNCTIONS 
     //----------------//
-    //AJOUTER
-    //MODIFIER
-    //SUPPRIMER
-    //VIEW
+    //-- ACTIONS DES FUNCTIONS --//
+    // AJOUTER
+    // VIEW
+    // SUPPRIMER
+    // MODIFIER -> Affichage MODAL EN JS -> AFFICHER L'ARTICLE)
     //----------------//
-    // UNE REQUETE SE REALISE EN 5 TEMPS POUR AJOUT (ligne 19)
-    //----------------//
-
-    //IMPORT FILE "CONTROLEUR_ACCUEIL.PHP"
-    //require_once "controleur_accueil.php";
+    // UNE REQUETE SE REALISE EN 5 TEMPS POUR AJOUT (ligne 19) | ENVOI D'UNE REQUETE SQL\PHP
+    // ------------------------ //
 
     //-- FUNCTION AJOUTER NOTES
     function AjouterNote($TitreForm, $DescriptionForm){
@@ -41,8 +39,7 @@
         };
     };
 
-
-    //-- FUNCTION VIEW NOTES (AFFICHAGE DES NOTES)
+    //-- FUNCTION AFFICHER NOTES
     function AffichageNotes(){
 
         // 1. Creation d'une variable globale qui pourra être accessible
@@ -78,3 +75,24 @@
             echo "</tr>";
         };
     };
+
+    //-- FUNCTION SUPPRIMER NOTES
+
+    function SupprimerNotes(){
+
+        echo "";
+
+
+
+    };
+
+    //-- FUNCTION MODIFIER NOTES
+
+    function ModifierNotes(){
+
+        echo "";
+
+
+
+    };
+?>
