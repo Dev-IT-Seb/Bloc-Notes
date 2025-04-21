@@ -120,14 +120,15 @@ h1{
     font-size: 18px;
 }
 
-/* BUTTON FORMULAIRE */
 .row-cta{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
+    gap: 2rem;
 }
 
+/* BUTTON FORMULAIRE WELCOME */
 .cta-accueil{
     border: solid 1px #ffffff;
     border-radius: 7%;
@@ -140,6 +141,22 @@ h1{
 }
 
 .cta-accueil p{
+    font-size: 15px;
+}
+
+/* BUTTON FORMULAIRE SEARCH */
+.cta-search{
+    border: solid 1px #ffffff;
+    border-radius: 7%;
+    background-color: #219230;
+    padding: 0.5rem 1rem;
+}
+
+.cta-search:hover{
+    background-color: #ff0404;
+}
+
+.cta-search p{
     font-size: 15px;
 }
 /* ----- FORMULAIRE ------- */

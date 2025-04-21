@@ -34,6 +34,10 @@
                         <div class="cta-accueil">
                             <p>Bienvenue</p>
                         </div>
+                        <!-- BUTTON SEARCH -->
+                        <div class="cta-search">
+                            <p>Voir notes</p>
+                        </div>
                     </div>
                 </div>
             </div>
