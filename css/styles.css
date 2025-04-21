@@ -205,7 +205,6 @@ h1{
     height: 20rem;
     margin-top: 0.5rem;
     font-size: 16px;
-
 }
 
 .title-label-description{
@@ -235,6 +234,9 @@ h1{
     background-color: #000000;
     border-radius: 7%;
 }
+#send:hover{
+    background-color: #ff0000;
+}
 /* ------------------ */
 /* VUE PAGE ACCUEIL */ 
 /* CSS HEAD IDEM (UX/UI)
@@ -254,7 +256,6 @@ h1{
 }
 
 /* TABLEAU VUE */
-
 .container-tableau-admin {
     display: flex;
     justify-content: center;
@@ -272,18 +273,29 @@ th{
     border: solid 1px #000000;
     font-size: 20px;
 }
+
+th::first-letter{
+    text-transform: uppercase;
+}
+
 /* TBODY TRAITEMENT PHP */
+td {
+    border: solid 1px #000000;
+    background-color: #68a3d3;
+    font-size: 18px;
+    padding: 0.4rem 0.5rem;
+}
 
+/* BUTTONS ACTIONS */
+.cta-actions{
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px black;
+    background-color: #000000;
+    border-radius: 10%;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.cta-actions:hover{
+    background-color: #ff0000;
+}
 /* ------------------ */
