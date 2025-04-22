@@ -106,7 +106,6 @@
 
 
     //-- FUNCTION MODIFIER NOTES
-
     function ModifierNotes(){
 
         echo "";

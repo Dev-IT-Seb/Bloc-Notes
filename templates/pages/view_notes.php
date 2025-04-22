@@ -1,5 +1,5 @@
 <?php
-    // VUE NOTES
+    // VUE NOTES ADMIN
     
     //AFFICHAGE ERREUR
     ini_set('display_errors',1);

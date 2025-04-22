@@ -13,7 +13,6 @@
     $TitreForm = $_POST["titreInput"];
     $DescriptionForm = $_POST["descriptionInput"];
 
-
     //-- LANCEMENT FUNCTION AJOUTER NOTES
     // SI LES PARAMETRES NE SONT PAS SAISIES DANS LA FUNCTION D'APPEL (Expected 2 arguments. Found 0.)
     //
