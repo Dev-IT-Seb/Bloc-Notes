@@ -57,8 +57,8 @@
                 ?>
             </div>
         </main>
-        <footer>
-            <script src="../../js/script.js"></script>
+        <footer> 
         </footer>
     </body>
+    <script src="../../js/script.js"></script>
 </html>
